@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background and panels -->
+    <color name="neko_background">#0B0812</color>
+    <color name="neko_panel">#15101E</color>
+    <color name="neko_panel_soft">#1C1428</color>
+    
+    <!-- Accent colors (Violet to Pink gradient endpoints) -->
+    <color name="neko_accent">#A978FF</color>
+    <color name="neko_accent2">#DF4F98</color>
+    <color name="neko_accent_ripple">#20A978FF</color>
+
+    <!-- UI Elements -->
+    <color name="neko_text">#F5F1FB</color>
+    <color name="neko_muted">#A198B2</color>
+    <color name="neko_line">#382B49</color>
+
+    <!-- Status -->
+    <color name="neko_success">#55D6A2</color>
+    <color name="neko_warning">#FFCC66</color>
+    <color name="neko_danger">#FF6F7D</color>
+    
+    <!-- Navigation -->
+    <color name="bottom_nav_bg">#090B10</color>
+</resources>

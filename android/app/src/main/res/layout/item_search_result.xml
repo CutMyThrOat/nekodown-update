@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/bg_card"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="80dp">
+            <ImageView
+                android:id="@+id/searchImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Portada"
+                android:scaleType="centerCrop"
+                android:background="@color/neko_line" />
+            <TextView
+                android:id="@+id/searchDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="4dp"
+                android:background="#99000000"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="2dp"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/searchTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/neko_text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/searchArtist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="13sp"
+                android:textColor="@color/neko_muted" />
+                
+            <TextView
+                android:id="@+id/searchDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="11sp"
+                android:textColor="#a978ff"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/actionContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPreview"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Escuchar (30s)"
+            app:icon="@android:drawable/ic_media_play"
+            android:textColor="@color/neko_text"
+            app:iconTint="@color/neko_text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDownloadQuick"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:text="Descargar"
+            app:backgroundTint="@color/neko_accent"
+            app:cornerRadius="8dp" />
+    </LinearLayout>
+</LinearLayout>

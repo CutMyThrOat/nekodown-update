@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: gradle
+    directory: /android
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      androidx-patches:
+        patterns:
+          - "androidx.*"
+      media-dependencies:
+        patterns:
+          - "io.github.junkfood02.youtubedl-android:*"
+          - "com.github.bumptech.glide:glide"

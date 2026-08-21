@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_card"
+    android:orientation="vertical"
+    android:padding="14dp">
+    <TextView android:id="@+id/itemTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/neko_text" android:textStyle="bold" />
+    <TextView android:id="@+id/itemSubtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textColor="@color/neko_muted" android:textSize="12sp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:gravity="center_vertical" android:orientation="horizontal">
+        <ProgressBar android:id="@+id/itemProgress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:max="100" android:progressTint="@color/neko_accent" />
+        <TextView android:id="@+id/itemPercent" android:layout_width="48dp" android:layout_height="wrap_content" android:gravity="end" android:textColor="@color/neko_text" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/itemState"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/neko_muted"
+            android:textSize="12sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/itemCancel"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Cancelar"
+            android:textSize="11sp" />
+    </LinearLayout>
+</LinearLayout>
