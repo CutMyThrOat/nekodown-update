@@ -10,8 +10,8 @@ android {
         applicationId = "com.nekodown.android"
         minSdk = 26
         targetSdk = 36
-        versionCode = 8
-        versionName = "1.5.3"
+        versionCode = 9
+        versionName = "1.6.2"
         buildConfigField("String", "CRASH_REPORT_ENDPOINT", "\"\"")
         ndk {
             abiFilters += "arm64-v8a"
