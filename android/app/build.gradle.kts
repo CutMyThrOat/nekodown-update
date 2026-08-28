@@ -38,7 +38,7 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.8.0")
     implementation("androidx.activity:activity:1.13.0")
     implementation("androidx.recyclerview:recyclerview:1.4.0")
-    implementation("androidx.documentfile:documentfile:1.0.1")
+    implementation("androidx.documentfile:documentfile:1.1.0")
     implementation("androidx.work:work-runtime:2.11.2")
     implementation("com.google.android.material:material:1.13.0")
     implementation("com.github.bumptech.glide:glide:4.16.0")
